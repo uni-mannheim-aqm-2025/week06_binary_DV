@@ -1,8 +1,8 @@
 ---
 title: "AQM Week 06 -- Models for Binary Dependent Variables"
 author: 
-  - Oliver Rittmann
-date: "April 8, 2024"
+  - Domantas Undzėnas, Muhammad Muhammad
+date: "March 20|21, 2025"
 output:
   html_document:
     toc: true
