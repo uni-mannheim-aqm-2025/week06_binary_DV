@@ -10,7 +10,7 @@ For those of you who are new to GitHub here is how you will get your materials:
 
 #### Get the URL of the repo for the current week
 
-Go to [https://github.com/uni-mannheim-aqm-2024](https://github.com/uni-mannheim-aqm-2025) and click on the repository for the current week. Now, click on the green **Clone or download** button and select **Use HTTPS** (this might already be selected by default, and if it is, you’ll see the text Clone with HTTPS as in the image below). Click on the clipboard icon to copy the repo URL.
+Go to [https://github.com/uni-mannheim-aqm-2025](https://github.com/uni-mannheim-aqm-2025) and click on the repository for the current week. Now, click on the green **Clone or download** button and select **Use HTTPS** (this might already be selected by default, and if it is, you’ll see the text Clone with HTTPS as in the image below). Click on the clipboard icon to copy the repo URL.
 
 ![](images/github_clone.png)
 
