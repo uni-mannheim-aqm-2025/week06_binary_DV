@@ -423,7 +423,7 @@ Let's find out:
 Run a simple logit model with y as the dependent variable and `x1` and `x2` as independent variables.
 Calculate fitted values $\hat y$. 
 
-Plot `x1` against `x2` and color the points according to the fitted values (orange for $\hat y = 1$ and blue for $\hat y = 0$ )
+Plot `x1` against `x2` and color the points according to the fitted values (purple for $\hat y = 1$ and cyan for $\hat y = 0$ )
 
 ```{r Logit model}
 
@@ -942,9 +942,15 @@ table(actual = y,
 # predicts civil war onset and compare it to predictions
 # of the simple logit regression model
 plot(roc(y, as.vector(pEst)),
-     col = viridis(3)[1])
+     col = viridis(3)[1], xlim = c(1.55, -0.55))
 lines(roc(y, res.glm$fitted.values),
       col = viridis(3)[2])
+segments(x0 = 1, y0 = 0, x1 = 1, y1 = 1, col = "black", lwd = 2, lty = 2)
+segments(x0 = 1, y0 = 1, x1 = 0, y1 = 1, col = "black", lwd = 2, lty = 2) 
+text(x = 0.85, y = 0.90, labels = "Perfect model", pos = 4, cex = 0.6)
+arrows(x0 = 0.85, y0 = 0.9, x1 = 1, y1 = 1, col = "black", lwd = 2, length = 0.1)
+text(x = 0.7, y = 0.15, labels = "No predictive power", pos = 4, cex = 0.6)
+arrows(x0 = 0.5, y0 = 0.2, x1 = 0.5, y1 = 0.5, col = "black", lwd = 2, length = 0.1)
 legend("topleft",
        legend = c("Neural Net",
                   "Simple Logit"),
